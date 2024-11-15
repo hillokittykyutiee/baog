@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jujutsu Kaisen Fan Page</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1c1c;  /* Dark theme */
+            color: #fff;
+            background-image: url('https://yourimageurl.com/jujutsu-kaizen-bg.jpg'); /* Replace with Jujutsu Kaisen-related background */
+            background-size: cover;
+            background-position: center;
+            transition: background 1s ease-in-out;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #f1f1f1;
+            padding: 4em 0;
+            text-align: center;
+            border-bottom: 3px solid #ff4d4d;  /* Red accent */
+            position: relative;
+            box-shadow: 0px 4px 12px rgba(255, 77, 77, 0.6); /* Shadow effect */
+        }
+
+        /* Typing Animation */
+        h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            overflow: hidden; 
+            white-space: nowrap;
+            border-right: .15em solid #ff4d4d;
+            width: 0;
+            animation: typing 5s steps(40) 1s forwards, blinkCaret 0.75s step-end infinite;
+        }
+
+        /* Keyframes for typing animation */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        /* Blinking caret animation */
+        @keyframes blinkCaret {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        /* Navigation Styling */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: #f1f1f1;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff4d4d;
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(255, 77, 77, 0.6);
+        }
+
+        /* Content Section */
+        .content {
+            padding: 5em;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        .content img, .content video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1.5em auto;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect for images and videos */
+        .content img:hover, .content video:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(255, 77, 77, 0.6);
+        }
+
+        /* Fade-in effect for content */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+            border-top: 3px solid #ff4d4d;
+            position: relative;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #ff4d4d;
+        }
+
+        footer:hover {
+            background-color: rgba(255, 77, 77, 0.2);
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jujutsu Kaisen Fan Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Videos.html">Videos</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <img src="e.jpg" alt="Jujutsu Kaizen Character" />
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jujutsu Kaisen Fan Page | All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> |
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+</body>
+</html>
